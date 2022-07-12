@@ -22,3 +22,6 @@ import Route from '@ioc:Adonis/Core/Route'
 
 Route.get('/vehicles', 'VehiclesController.index')
 Route.post('/vehicles', 'VehiclesController.create')
+Route.put('/vehicles/:id', 'VehiclesController.edit')
+Route.post('/favorite/:id', 'VehiclesController.favorite')
+Route.delete('/vehicles/:id', 'VehiclesController.destroy')
